@@ -8,13 +8,14 @@ const databaseFileName = "database.json";
 ///////////////////////////////////////////////////
 // Program logic
 //////////////////////////////////////////////////
-// 1) variable appelee dataObjet to store from database
+// 1) variable dataObjet to store from database
 let dataObjet = {};
 //2) get data from database and store it in the variable dataObjet
 dataObjet = getDataFromDB();
 // 3) create un object pour contenir les donnees d'un prof
 console.log("=========Enregistrer un Prof ==========");
 let nouvoProf = {
+  id: uuidv4(),
   nom: "Bakary",
   prenom: "Konate",
   email: "prof1@gmail.com",
@@ -24,6 +25,7 @@ let nouvoProf = {
 console.log("=========Enregistrer un cours avec les ref d'un prof ==========");
 
 const nouvoCours = {
+  id: uuidv4(),
   titre: "chimie",
   description: "Ce cours est une introduction de la chimie generale",
   prof: "",
