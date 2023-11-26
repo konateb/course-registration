@@ -1,4 +1,3 @@
-console.log("Index is fired");
 import prompt from "prompt-sync";
 import { v4 as uuidv4 } from "uuid";
 import { readFileSync, writeFileSync } from "node:fs";
