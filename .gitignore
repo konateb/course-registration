@@ -132,4 +132,6 @@ dist
 # database.json
 database.json
 database/database.json
-auth/
+
+#password.json
+authodb/password.json
